@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .button {
+        padding: 0 1rem 0 1rem;
+        background-color: #8257e6;
+        border-radius: 10rem;
+        height: 4rem;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        max-width: 100rem !important;
+        .feed {
+            max-width: 0;
+            overflow: hidden;
+        }
+        &.button:hover:after {
+            transition: all 0.8s;
+            padding: 0 4rem 0 0;
+            svg {
+                padding-left: 1rem;
+            }
+            .feed {
+                overflow: none !important;
+                .info {
+                    padding-left: 1rem;
+                    //overflow: visible;
+                    max-width: 4rem;
+                }
+            }
+        }
+    }
+}
+
+//resolver o negocio do hover
